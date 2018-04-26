@@ -65,7 +65,7 @@ func main() {
 		select {
 		//向服务器发送消息
 		case <-ticker.C:
-		//断开连接
+			//断开连接
 		case <-interrupt:
 			log.Println("interrupt")
 			// To cleanly close a connection, a client should send a close
@@ -84,3 +84,4 @@ func main() {
 		}
 	}
 }
+
